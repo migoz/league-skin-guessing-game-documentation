@@ -1,4 +1,4 @@
 -   ## Introduction
-    -   [Overview](/{{route}}/{{version}}/overview)
+    -   [Overview](/league-skin-guessing-game-documentation/{{route}}/{{version}}/overview)
 -   ## Homepage.js
-    -   [Homepage.js](/{{route}}/{{version}}/homepagejs)
+    -   [Homepage.js](/league-skin-guessing-game-documentation/{{route}}/{{version}}/homepagejs)

@@ -163,7 +163,7 @@ For a more thorough explanation on `await` and `async`, take a look at Mozilla's
 
 <br />
 
-In the `Homepage.js` class, we make use of `async` and `await` when making a call to our API which returns a JSON string (fetched from Riot's official API on a weekly basis in order to keep the skin count of each champion accurate and up to date) of all champion data, including champion names, images, descriptions, and skin counts:
+In the `Homepage.js` class, we make use of `async` and `await` when making a call to our API which returns a JSON string (fetched from Riot's <a href="https://developer.riotgames.com/" target="_blank">official API</a> on a weekly basis in order to keep the skin count of each champion accurate and up to date) of all champion data, including champion names, images, descriptions, and skin counts:
 
 ```js
 async fetchChampions() {
@@ -187,7 +187,7 @@ async fetchChampions() {
 }
 ```
 
-We can see that after we get a result from the `fetch` call to our API endpoint (`/api/champions`), we first randomize the results, and then call `setState()` to update the values of `champions`, `championOne`, and `championTwo`. You'll notice that for `championOne` and `championTwo`, we're calling `pop()` on `champions`, which is just grabbing the last element of the `champions` of the array, which is fine as we randomize the results just above the call to `setState()`.
+We can see that after we get a result from the `fetch` call to our API endpoint (`/api/champions`, see its source code <a href="https://github.com/Orkidz/league-of-legends-guessing-game/blob/master/server/src/index.js#L21" target="_blank">here</a>), we first randomize the results, and then call `setState()` to update the values of `champions`, `championOne`, and `championTwo`. You'll notice that for `championOne` and `championTwo`, we're calling `pop()` on `champions`, which is just grabbing the last element of the `champions` of the array, which is fine as we randomize the results just above the call to `setState()`.
 
 <a name="section-7"></a>
 
